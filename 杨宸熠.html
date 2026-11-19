@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+            line-height: 60px;
+        }
+        body{
+            background-color: #ff5f5f;
+        }
+        .bb{
+            width: 160px;
+            margin: 80px 0 0 80px;
+        }
+        .yijiliebiao>li{
+            width: 160px;
+            height: 60px;
+            position: relative;
+            background: #bb1313;
+            margin-bottom: 4px;
+        }
+        .yijiliebiao a{
+            color:#fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .erjihezi{
+            position: absolute;
+            left:160px;
+            top:0;
+            background-color: rgb(255 255 255 / 0.9);
+            display: none;
+        }
+        .erjiliebiao>li{
+            width: 160px;
+            height: 45px;
+        }
+        .erjiliebiao a{
+            color:#000;
+            font-size:16px;
+        }
+        .yijiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+        .yijiliebiao>li:hover{
+            background-color: #990f0f;
+        }
+    </style>
+</head>
+<body>
+    <div class="bb">
+        <ul class="yijiliebiao">
+            <li>
+                <a href="#">学校概况</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">学校简介</a></li>
+                        <li><a href="#">校史沿革</a></li>
+                        <li><a href="#">校园风光</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">机构设置</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">职能部门</a></li>
+                        <li><a href="#">教学院系</a></li>
+                        <li><a href="#">科研中心</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">教育教学</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">人才培养</a></li>
+                        <li><a href="#">师资队伍</a></li>
+                        <li><a href="#">实践实训</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
